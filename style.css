@@ -1,0 +1,88 @@
+body
+{
+    margin: 0px;
+    background: purple;
+}
+
+.button_user_select
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: block;
+    height: 60px;
+    width: 80%;
+}
+
+.main
+{
+    margin: 1% 1% 1% 1%;
+    border: yellow solid 4px;
+}
+
+.doboz
+{
+    text-align: center;
+}
+
+.bottom_menu
+{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    bottom: 0;
+    z-index: 2000;
+    margin: 0px;
+    background: black;
+}
+
+.bottom_menu button
+{
+    width: 18%;
+    height: 40px;
+}
+
+.szoveg_cella
+{
+    margin: 1% 0% 0% 0%;
+    width: 100%;
+    background: red;
+    display: flex;
+    justify-content: space-evenly;
+}
+.szoveg_cella_alul
+{
+    line-height: 1.2em;
+    height: 1.2em;
+    margin: 0% 0% 1% 0%;
+    width: 100%;
+    background: green;
+    overflow: hidden;
+}
+
+.szoveg_cella_bal, .szoveg_cella_jobb
+{
+    position: relative;
+    width: 50%;
+    margin: 0px;
+}
+
+.szoveg_cella_jobb
+{
+    color: transparent;
+}
+
+.fav-button
+{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+#kiiras
+{
+    text-align: left;
+}

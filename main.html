@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="hu" on>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+    <title>Cucc</title>
+</head>
+<body>
+    <div class="main" id="main">
+        <div class="doboz">
+            <h1 id="cim">
+            </h1>
+            <div>
+                <button onclick="favourites_list()">
+                    Favorites
+                </button>
+                <button onclick="kiiras()">
+                    All
+                </button>
+            </div>
+            <div>
+                <input type="text" placeholder="You can search here" id="main_search_box">
+                <button onclick="search_list('main_search_box')">
+                    Search
+                </button>
+            </div>
+            <div id="kiiras">
+                
+            </div>
+        </div>
+    </div>
+    <div class="bottom_menu">
+        <button>Word List</button>
+        <button>Learn</button>
+        <button>Add Words</button>
+        <button onclick="visszamenube()">Back</button>
+    </div>
+</body>
+</html>
