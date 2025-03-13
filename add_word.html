@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="hu" on>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+    <title>Cucc</title>
+</head>
+<body>
+    <div class="overlay" id="addword_overlay" onclick="tooltip_off('addword_tooltip', 'addword_overlay')">
+        <div class="addword_tooltip" id="addword_tooltip">
+            <button class="cross" onclick="tooltip_off('addword_tooltip', 'addword_overlay')">X</button>
+            Segítség: <br>Magyar: ide kell írni a magyar szót<br><br>
+            Angol: ide kell írni a szót angolul<br><br>
+            Mondat: Írd le a mondatot magyarul, majd a pont után tegyél egy ;-őt és utána folytasd a mondat fordításával. Ha több mondat van akkor folytasd ezekkel a lépésekkel. Pl. Mondat.;Fordítás.;Ujmondat.;Fordítás.<br><br>
+            Írhatsz a mondatba *-ot. Kettő csillag közötti rész kiemelést fog kapni a mentést követően amikor megjelenik a szöveg Pl. Ez *egy* mondat.;Ez egy *fordítás*.<br><br>
+            Tag: Nagybetűvel kezdődjön és ne legyen benne space. ;-vel legyenek elválasztva a tagek a felsorolásban. Pl Tag1;Tag2;Tag3
+    
+        </div>
+    </div>
+    
+    <div class="main" id="main">
+        <div class="doboz">
+            <h1>Add Word <button onclick="tooltip_on('addword_tooltip', 'addword_overlay')">?</button></h1>
+            <p>Magyar: <input type="text" placeholder="Alma" id="magyarszo"></p>
+            <p>Angol: <input type="text" placeholder="Apple" id="angolszo"></p>
+            <p>Mondat: <input type="text" placeholder="alma alma alma;itt a fordítása;itt egy másik mondat;és a fordítása" id="mondat"></p>
+            <p>Tag: <input type="text" placeholder="Fruit;Furniture;Trait" id="tag"></p>
+            <p>
+                <button onclick="addword_addword()">Felvesz</button>
+            </p>
+        </div>
+    </div>
+    <div class="bottom_menu">
+        <button>Word List</button>
+        <button>Learn</button>
+        <button onclick="addword()">Add Words</button>
+        <button>AI</button>
+        <button onclick="visszamenube()">Back</button>
+    </div>
+</body>
+</html>

@@ -62,6 +62,15 @@ body
     background: green;
     overflow: hidden;
 }
+.szoveg_cella_tags
+{
+    line-height: 1.2em;
+    height: 1.2em;
+    margin: 0% 0% 1% 0%;
+    width: 100%;
+    background: blue;
+    overflow: hidden;
+}
 
 .szoveg_cella_bal, .szoveg_cella_jobb
 {
@@ -85,4 +94,43 @@ body
 #kiiras
 {
     text-align: left;
+}
+
+.overlay
+{
+    visibility: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+
+    backdrop-filter: blur(2px);
+    z-index: 9000;
+}
+
+.addword_tooltip {
+    visibility: hidden;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    width: 70%;
+    height: 70%;
+    
+    background-color: aquamarine;
+    display: flex;
+    
+    z-index: 9999; /* Minden más fölé helyezi */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Árnyék a jobb láthatóságért */
+    border-radius: 10px; /* Lekerekített sarkok (opcionális) */
+    padding: 20px; /* Belső térköz */
+}
+
+.addword_tooltip .cross
+{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin-right: 2%;
+    margin-top: 2%;
 }
